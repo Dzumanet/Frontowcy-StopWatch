@@ -1,12 +1,9 @@
 import './App.css'
 
-function App() {
+export const App = () => {
 
-  return (
-    <>
+  return <>
 
-    </>
-  )
+  </>
 }
 
-export default App
