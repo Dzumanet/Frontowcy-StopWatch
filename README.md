@@ -67,3 +67,4 @@ npm run dev
 ## Contact
 
 Konrad - dzumanet@gmail.com
+https://github.com/Dzumanet
