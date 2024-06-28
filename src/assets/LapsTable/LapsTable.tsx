@@ -14,13 +14,12 @@ type LapsRecordProps = {
 export const LapsTable = ({lapsArray}: LapsRecordProps) => {
 
     return (
-        <>
+        <div className='laps-table-wrapper'>
             <table className="laps-table">
-                <caption>Lap time table</caption>
-                <thead>
+                <thead className='laps-table-header'>
                 <tr>
-                    <th className="lap-number">Lap number</th>
-                    <th>Time</th>
+                    <th className="lap-number">lap number</th>
+                    <th>time</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -32,6 +31,6 @@ export const LapsTable = ({lapsArray}: LapsRecordProps) => {
                 ))}
                 </tbody>
             </table>
-        </>
+        </div>
     )
 }

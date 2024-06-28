@@ -5,10 +5,10 @@ import './Button.css';
 type btnProps = {
     label: string;
     color?: string;
-    onClick: MouseEventHandler<HTMLButtonElement>
+    onClick?: MouseEventHandler<HTMLButtonElement>
 }
 
 export const Button = ({label, color, onClick}: btnProps) => {
 
-    return <button onClick={onClick} className="button" style={{backgroundColor: color}}>{label}</button>;
+    return <button onClick={onClick} style={{backgroundColor: color}}>{label}</button>;
 }

@@ -1,5 +1,8 @@
 import {TimeConverter} from "../utils/TimeConverter.ts";
 
+import './Summary.css';
+
+
 type SingleLap = {
     lapCount: number;
     lapTime: number;
@@ -23,11 +26,12 @@ export const Summary = ({lapsArray, totalTime}: SummaryProps) => {
     const slowestLap = totalLaps > 0 ? Math.max(...lapsArray.map(lap => lap.lapTime)) : 0;
 
     return (
-        <table className="summary">
+        <div className="summary-table-wrapper">
+        <table className="summary-table">
             <caption>Summary</caption>
             <tbody>
             <tr>
-                <td>Lączny czas / Total time</td>
+                <td>Łączny czas / Total time</td>
                 <td>{TimeConverter(totalTime)}</td>
             </tr>
             <tr>
@@ -35,18 +39,19 @@ export const Summary = ({lapsArray, totalTime}: SummaryProps) => {
                 <td>{totalLaps}</td>
             </tr>
             <tr>
-                <td>Sredni czas okrązenie / Average lap time</td>
+                <td>Średni czas okrążenie / Average lap time</td>
                 <td>{TimeConverter(averageLapTime)}</td>
             </tr>
             <tr>
-                <td>Najszybsze okrązenie / Fastest lap</td>
+                <td>Najszybsze okrążenie / Fastest lap</td>
                 <td>{TimeConverter(fastestLap)}</td>
             </tr>
             <tr>
-                <td>najwolniejsze okrązenie / slowest lap</td>
+                <td>Najwolniejsze okrążenie / Slowest lap</td>
                 <td>{TimeConverter(slowestLap)}</td>
             </tr>
             </tbody>
         </table>
+        </div>
     )
 }
