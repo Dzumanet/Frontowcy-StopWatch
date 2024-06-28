@@ -1,0 +1,17 @@
+button {
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    font-size: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    transition: border-color 0.25s;
+}
+button:hover {
+    border-color: #6ddc48;
+}
+button:active {
+    border-color: #4872dc;
+}

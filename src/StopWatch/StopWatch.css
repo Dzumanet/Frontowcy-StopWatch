@@ -1,0 +1,31 @@
+.stopwatch-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 50px;
+
+}
+
+.stopwatch-wrapper {
+    display: flex;
+}
+
+.stopwatch-dial-wrapper {
+    order: 2;
+}
+
+.btn-left, .btn-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.btn-left {
+    order: 1;
+}
+
+.btn-right {
+    order: 3;
+}
+

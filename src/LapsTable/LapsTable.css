@@ -1,0 +1,33 @@
+.laps-table-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+    display: block;
+    position: relative;
+}
+
+.laps-table {
+    width: 500px;
+    border-collapse: collapse;
+    font-size: 18px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.laps-table th,
+.laps-table td {
+    border: 5px solid #333333;
+    padding: 8px;
+    width: 130px;
+    text-align: center;
+}
+
+.laps-table th {
+    background-color: #474646;
+}
+
+.laps-table-header {
+    position: sticky;
+    top: -5px;
+    left: 0;
+    z-index: 2;
+}
