@@ -13,6 +13,10 @@ This project was completed as part of the FRONTOWCY course.
 
 ## Sample Screenshots
 
+![stopwach01.jpg](src/assets/stopwach01.jpg)
+![stopwach02.jpg](src/assets/stopwach02.jpg)
+![stopwach03.jpg](src/assets/stopwach03.jpg)
+![stopwach04.jpg](src/assets/stopwach04.jpg)
 
 
 ## Features
