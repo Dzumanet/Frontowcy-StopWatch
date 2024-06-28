@@ -1,4 +1,4 @@
-import {StopWatch} from "./assets/StopWatch/StopWatch.tsx";
+import {StopWatch} from "./StopWatch/StopWatch.tsx";
 
 import './App.css'
 
